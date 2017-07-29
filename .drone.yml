@@ -8,9 +8,9 @@ pipeline:
   ssh:
     image: appleboy/drone-ssh
     pull: true
-    host: 139.59.123.108
-    username: root
-    password: 1234567890
+    host: 192.168.25.202
+    username: edison
+    password: 2lxxajux
 #    secrets: [ ssh-pass ]
     port: 22
     script:
