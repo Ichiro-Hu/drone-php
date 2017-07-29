@@ -20,10 +20,11 @@ pipeline:
 
   scp:
     image: appleboy/drone-scp
-    host: 139.59.123.108
-    username: drone
-#    secrets: [ ssh-pass ]
-    password: 1234567890
+    host: 192.168.25.202
+    username: edison
+    secrets:
+      - source: edison
+        target: ssh_password
     port: 22
     target: /home/drone/ichiro
     source: /root/drone-line
