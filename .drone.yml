@@ -9,11 +9,13 @@ pipeline:
     image: appleboy/drone-scp
     host: 139.59.123.108
     username: drone
+#    secrets: [ ssh-pass ]
     password: 1234567890
     port: 22
     target: /home/drone/ichiro
     source: /root/drone-line/
-
+    when:
+      status:  [ success ]
 
 services:
   elasticsearch:
