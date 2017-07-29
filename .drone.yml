@@ -34,7 +34,7 @@ pipeline:
         target: ssh_password
     port: 22
     script:
-      - docker ps
+      - sudo docker ps
     when:
       status:  [ success ]
 
