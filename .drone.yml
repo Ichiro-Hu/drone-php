@@ -10,7 +10,9 @@ pipeline:
     pull: true
     host: 192.168.25.202
     username: edison
-    secrets: [ edison ]
+    secrets:
+      - source: edison
+        target: ssh_password
     port: 22
     script:
       - echo hello
