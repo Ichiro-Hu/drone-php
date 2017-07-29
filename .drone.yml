@@ -17,7 +17,13 @@ pipeline:
     script:
       - echo hello
       - echo world
-
+  line:
+    image: appleboy/drone-line
+    channel_secret: 6668659454ee84bdb5f3ea0932ab83cd
+    channel_token: ILSeSl4fALYomdzwx33EapLrOA5O/lsQIZOVYAOM5EpKp+zG1LlpCSAyfQ9ogv82CO7fR6LEzS4YK0G+q/MvwuHCgTH4c1H3KSSXllStZusuDl6ce+rgSo8eMlQDye2v3rvcGFx7QTBDcshXmAVWxAdB04t89/1O/w1cDnyilFU=
+    to: U664ba5a51f1e2d2a77306a18385dfc0b
+    message: ichiro
+    
   ssh:
     image: appleboy/drone-ssh
     pull: true
