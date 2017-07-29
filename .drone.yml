@@ -10,7 +10,8 @@ pipeline:
     pull: true
     host: 139.59.123.108
     username: root
-    secrets: [ ssh-pass ]
+    password: 1234567890
+#    secrets: [ ssh-pass ]
     port: 22
     script:
       - echo hello
