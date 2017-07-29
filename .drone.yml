@@ -10,8 +10,7 @@ pipeline:
     pull: true
     host: 192.168.25.202
     username: edison
-    password: 2lxxajux
-#    secrets: [ ssh-pass ]
+    secrets: [ EDISON ]
     port: 22
     script:
       - echo hello
