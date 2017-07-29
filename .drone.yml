@@ -10,7 +10,7 @@ pipeline:
     pull: true
     host: 192.168.25.202
     username: edison
-    secrets: [ EDISON ]
+    secrets: [ edison ]
     port: 22
     script:
       - echo hello
